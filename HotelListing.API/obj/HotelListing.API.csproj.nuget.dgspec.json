@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mitchelwachtel/Projects/HotelListing/HotelListing.API/HotelListing.API.csproj": {}
+    "/Users/mitchelwachtel/Projects/HotelListing.Net6/HotelListing.API/HotelListing.API.csproj": {}
   },
   "projects": {
-    "/Users/mitchelwachtel/Projects/HotelListing/HotelListing.API/HotelListing.API.csproj": {
+    "/Users/mitchelwachtel/Projects/HotelListing.Net6/HotelListing.API/HotelListing.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mitchelwachtel/Projects/HotelListing/HotelListing.API/HotelListing.API.csproj",
+        "projectUniqueName": "/Users/mitchelwachtel/Projects/HotelListing.Net6/HotelListing.API/HotelListing.API.csproj",
         "projectName": "HotelListing.API",
-        "projectPath": "/Users/mitchelwachtel/Projects/HotelListing/HotelListing.API/HotelListing.API.csproj",
+        "projectPath": "/Users/mitchelwachtel/Projects/HotelListing.Net6/HotelListing.API/HotelListing.API.csproj",
         "packagesPath": "/Users/mitchelwachtel/.nuget/packages/",
-        "outputPath": "/Users/mitchelwachtel/Projects/HotelListing/HotelListing.API/obj/",
+        "outputPath": "/Users/mitchelwachtel/Projects/HotelListing.Net6/HotelListing.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mitchelwachtel/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0, )"
