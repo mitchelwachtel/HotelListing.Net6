@@ -16,13 +16,13 @@ namespace HotelListing.API.Controllers
     [ApiController]
     public class CountriesController : ControllerBase
     {
-        
+
         private readonly IMapper _mapper;
         private readonly ICountriesRepository _countriesRepository;
 
         public CountriesController(IMapper mapper, ICountriesRepository countriesRepository)
         {
-            
+
             this._mapper = mapper;
             this._countriesRepository = countriesRepository;
         }
@@ -104,7 +104,7 @@ namespace HotelListing.API.Controllers
             var country = _mapper.Map<Country>(createCountryDto);
 
             await _countriesRepository.AddAsync(country);
-            
+
 
             return CreatedAtAction("GetCountry", new { id = country.Id }, country);
         }
@@ -120,7 +120,7 @@ namespace HotelListing.API.Controllers
             }
 
             await _countriesRepository.DeleteAsync(id);
-            
+
 
             return NoContent();
         }
